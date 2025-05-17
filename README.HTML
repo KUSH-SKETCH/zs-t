@@ -1,0 +1,144 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Unique Website</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header {
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: fadeDown 1s ease-out;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      margin: 50px 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      width: 250px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ffd700;
+      color: #333;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ffcc00;
+    }
+
+    @keyframes fadeDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Unique Site</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Portfolio</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Who Am I?</h2>
+  <p>I'm a creative mind who loves building beautiful websites!</p>
+  <button>Discover More</button>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <h3>Design</h3>
+    <p>Modern and clean designs tailored for you.</p>
+  </div>
+  <div class="card">
+    <h3>Development</h3>
+    <p>Fast, responsive, and functional websites.</p>
+  </div>
+  <div class="card">
+    <h3>Support</h3>
+    <p>Always ready to help and improve your vision.</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 My Unique Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
